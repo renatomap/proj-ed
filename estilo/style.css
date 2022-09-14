@@ -10,16 +10,14 @@
 
 /* Pseudo-classe */
 :root {
-    --cor0: #aff8b5;
-    --cor1: #70f77b;
-    --cor2: #61be67;
-    --cor3: #2a6d30;
-    --cor4: #314933;
+    --cor0: rgb(255, 255, 255);
+    --cor1: rgb(255, 238, 238);
+    --cor2: rgb(253, 214, 214);
+    --cor3: rgb(252, 195, 195);
     
     --fonte-padrao: Arial, Times, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-android: 'Android', cursive;
-    
 }
 
 /* Configuração Global */
@@ -38,8 +36,13 @@ header {
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
-    
-    
+}
+
+header > img {
+    width: 32px;
+    height: px;
+    border-radius: 50%;
+    border: 5px solid var(--cor0);
 }
 
 header > h1 {
