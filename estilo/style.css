@@ -136,7 +136,7 @@ main a:hover {
 }
 
 main img {
-    width: 100%;
+    width: auto;
 }
 
 article h2 {
@@ -147,6 +147,15 @@ main img.pequena {
     max-width: 300px;
     display: block;
     margin: auto;
+}
+
+div.missao {
+    background-color: var(--cor3);
+    height: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 15px;
+    padding-bottom: 50%;
 }
 
 div.video {
