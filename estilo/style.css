@@ -12,8 +12,9 @@
 :root {
     --cor0: rgb(255, 255, 255);
     --cor1: rgb(255, 238, 238);
-    --cor2: rgb(253, 214, 214);
-    --cor3: rgb(252, 195, 195);
+    --cor2: rgb(255, 214, 214);
+    --cor3: rgb(255, 180, 180);
+    --cor4: rgb(255, 139, 139);
     
     --fonte-padrao: Arial, Times, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
@@ -24,26 +25,27 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
-
+div {
+    display: block;
+}
 body {
     background-color: antiquewhite;
     font-family: var(--fonte-padrao);
 }
-
+/* header star */
 header {
     /* background-image: linear-gradient(to bottom, var(--cor1), var(--cor3)); */
     min-height: 150px;
     text-align: center;
 }
-
 header > img {
     width: 32px;
     height: px;
     border-radius: 50%;
     border: 5px solid var(--cor0);
 }
-
 header > h1 {
     font-family: var(--fonte-destaque);
     color: white;
@@ -51,7 +53,6 @@ header > h1 {
     font-size: 3em;
     text-shadow: 3px 2px 1px #00000038;
 }
-
 header > p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
@@ -63,7 +64,8 @@ header > p {
     margin: auto;
     text-shadow: 3px 2px 1px #00000038;
 }
-
+/* header end  */
+/* nav start*/
 nav {
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     /* background-color: var(--cor3); */
@@ -71,7 +73,6 @@ nav {
     padding-bottom: 5px;
     text-align: center;
 }
-
 nav > a {
     padding: 5px;
     color: white;
@@ -79,13 +80,18 @@ nav > a {
     border-radius: 5px;
     transition-duration: 0.5s;
 }
-
 nav > a:hover {
     background-color: rgb(255, 255, 255);
     color: var(--cor3);
 }
-
-
+/* nav end */
+/* main start */
+img.imagem-01 {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 2px #0000006e;
+}
 main {
     min-width: 300px;
     max-width: 1000px;
@@ -96,21 +102,18 @@ main {
     background-color: white;
     box-shadow: 3px 2px 10px #00000063;
 }
-
 main h1 {
     font-family: var(--fonte-destaque);
-    color: var(--cor4);
-    
-}
 
+}
 main h2 {
     font-family: var(--fonte-destaque);
     font-size: 1.3em;
-    color: var(--cor4);
-    background-image: linear-gradient(50deg, var(--cor0), white);
+    background-image: linear-gradient(50deg, var(--cor0), rgb(255, 114, 114));
+    border-radius: 3px;
     padding-left: 10px;
+    margin-top: 30px;
 }
-
 main p {
     text-indent: 5%;
     line-height: 1.5em;
@@ -118,11 +121,12 @@ main p {
     margin: 10px 0px;
     
 }
-
-main strong {
-    color: var(--cor3);
+strong {
+    color: var(--cor4);
 }
-
+/* div.missao > strong {
+    color: var(--cor4);
+} */
 main a {
     background-color: var(--cor2);
     color: white;
@@ -130,34 +134,46 @@ main a {
     text-decoration: none;
     border-radius: 5px;
 }
-
 main a:hover {
     text-decoration: underline;
 }
-
 main img {
     width: auto;
 }
-
 article h2 {
     padding-top: 10px;
 }
-
 main img.pequena {
     max-width: 300px;
     display: block;
     margin: auto;
 }
-
+article .missao {
+    background-color: aliceblue;
+    box-shadow: inset 0px 0px 3px #00000078;
+    padding: 10px;
+}
+article .valores {
+    background-color: antiquewhite;
+    box-shadow: inset 0px 0px 3px #00000078;
+    padding: 10px;
+}
 div.missao {
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     height: 0px;
     margin-left: -10px;
     margin-right: -10px;
     margin-bottom: 15px;
     padding-bottom: 50%;
 }
-
+div.valores {
+    background-color: var(--cor2);
+    height: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 15px;
+    padding-bottom: 50%;
+}
 div.video {
     position: relative;
     background-color: var(--cor3);
@@ -167,7 +183,6 @@ div.video {
     margin-bottom: 15px;
     padding-bottom: 50%;
 }
-
 div.video > iframe {
     position: absolute;
     top: 5%;
@@ -175,41 +190,42 @@ div.video > iframe {
     width: 90%;
     height: 90%;
 }
-
 ul {
+    list-style-type: none;
+    columns: 4;
+    list-style: none;
+    width: auto;
+}
+/* ul {
     list-style-type: '\2714\0020\0020';
     columns: 2;
     list-style-position: inside;
     
-}
-
+} */
 div.lista {
     background-color: var(--cor3);
     margin-right: -10px;
     margin-left: -10px;
     padding: 10px;
-    
 }
-
 ul.caixa {
     background-color: aliceblue;
     box-shadow: inset 0px 0px 3px #00000078;
     padding: 10px;
 }
-
+/* main end */
+/* footer start */
 footer {
-    background-color: var(--cor2);
+    background-color: var(--cor4);
     text-align: center;
     padding-top: 2px;
     padding-bottom: 2px;
 }
-
 footer a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-
 footer a:hover {
     background-color: var(--cor0);
     color: #314933;
@@ -217,3 +233,4 @@ footer a:hover {
     border-radius: 5px;
     text-decoration: underline;
 }
+/* footer end */
