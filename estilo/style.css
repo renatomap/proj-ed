@@ -93,8 +93,8 @@ img.imagem-01 {
     box-shadow: 0px 5px 2px #0000006e;
 }
 main {
-    min-width: 300px;
-    max-width: 1000px;
+    min-width: 400px;
+    max-width: 1250px;
     margin: auto;
     margin-bottom: 10px;
     border-radius: 0px 0px 10px 10px;
@@ -153,7 +153,48 @@ article .missao {
     box-shadow: inset 0px 0px 3px #00000078;
     padding: 10px;
 }
-article .valores {
+article .visao {
+    background-color: aliceblue;
+    box-shadow: inset 0px 0px 3px #00000078;
+    padding: 10px;
+}
+article .swot {
+    background-color: aliceblue;
+    box-shadow: inset 0px 0px 3px #00000078;
+    padding: 10px;
+}
+.missao picture {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: px;
+}
+.visao picture {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: px;
+}
+.valor picture {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: px;
+}
+.swot picture {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+article .valor {
     background-color: antiquewhite;
     box-shadow: inset 0px 0px 3px #00000078;
     padding: 10px;
@@ -163,10 +204,31 @@ div.missao {
     height: 0px;
     margin-left: -10px;
     margin-right: -10px;
-    margin-bottom: 15px;
-    padding-bottom: 50%;
+    padding-bottom: 43%;
 }
-div.valores {
+div.visao {
+    background-color: var(--cor0);
+    height: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-bottom: 43%;
+}
+div.valor {
+    background-color: var(--cor2);
+    height: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-bottom: 43%;
+}
+div.swot {
+    background-color: var(--cor2);
+    height: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-bottom: 43%;
+}
+div.video {
+    position: relative;
     background-color: var(--cor2);
     height: 0px;
     margin-left: -10px;
@@ -174,14 +236,17 @@ div.valores {
     margin-bottom: 15px;
     padding-bottom: 50%;
 }
-div.video {
-    position: relative;
-    background-color: var(--cor3);
+article .swot {
+    background-color: antiquewhite;
+    box-shadow: inset 0px 0px 3px #00000078;
+    padding: 10px;
+}
+div.swot {
+    background-color: var(--cor0);
     height: 0px;
     margin-left: -10px;
     margin-right: -10px;
-    margin-bottom: 15px;
-    padding-bottom: 50%;
+    padding-bottom: 43%;
 }
 div.video > iframe {
     position: absolute;
@@ -234,3 +299,112 @@ footer a:hover {
     text-decoration: underline;
 }
 /* footer end */
+/* card start */
+.container h1 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor0);
+    font-size: 4em;
+    text-align: center;
+}
+.produto p {
+    color: var(--cor4);
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+    background-image: linear-gradient(50deg, var(--cor0), var(--cor2));
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+/* .produto h3 {
+    background-color: rgb(255, 60, 60);
+    border-radius: 5px;
+    box-shadow: 0px 5px 2px #00000031;
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+} */
+.compra h3 {
+    background-color: rgb(255, 93, 87);
+    border-radius: 5px;
+    box-shadow: 0px 5px 2px #00000031;
+    margin: 10px;
+    padding: 13px;
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+    flex-wrap: wrap;
+    text-align: center;
+    color: aliceblue;
+}
+.compra a {
+    background-color: rgb(185, 255, 168);
+    border-radius: 5px;
+    box-shadow: 0px 5px 2px #00000031;
+    margin: 10px;
+    padding: 5px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    flex-wrap: wrap;
+    text-align: center;
+    color: black;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.produto {
+    border: 1px solid var(--cor0);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.produto:hover {
+    box-shadow: 0px 5px 2px #0000001f;
+    transform: translate(0px, -5px);
+}
+/* card end */
+/* fotos start */
+.container h1 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor0);
+    font-size: 4em;
+    text-align: center;
+}
+.avaliacao {
+    justify-content: space-around;
+}
+.comentario {
+    justify-content: space-around;
+}
+.avaliacao h3 {
+    margin-top: 10px;
+}
+.avaliacao p {
+    color: var(--cor);
+    font-family: var(--fonte-android);
+    font-size: 1.3em;
+    background-image: linear-gradient(50deg, var(--cor0), var(--cor2));
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 32%;
+}
+.avaliacao {
+    border: 1px solid var(--cor0);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.avaliacoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.avaliacao:hover {
+    box-shadow: 0px 5px 2px #0000001f;
+    transform: translate(0px, -5px);
+}
